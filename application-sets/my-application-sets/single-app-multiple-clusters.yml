@@ -8,7 +8,7 @@ spec:
   - clusters: {} # Automatically use all clusters defined within Argo CD
   template:      
     metadata:
-      name: '{{name}}-sealed-secrets'
+      name: 'sealed-secrets-{{name}}'
     spec:
       # The project the application belongs to.
       project: default
